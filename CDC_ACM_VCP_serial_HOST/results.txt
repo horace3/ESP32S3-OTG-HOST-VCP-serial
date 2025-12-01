@@ -1,0 +1,25 @@
+Arduino IDE ESP32-S3-DevKitC-1 OTG Host VCP serial test
+
+
+enter text to transmit over VCP serial
+at
+
+OK
+at+cgmi
+
+Quectel
+
+OK
+at+cgmm
+
+EC21
+
+OK
+at_csq
+
+ERROR
+at+csq
+
++CSQ: 99,99
+
+OK
