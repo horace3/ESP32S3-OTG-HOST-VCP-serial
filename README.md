@@ -10,4 +10,6 @@ adapted from ESP-IDF ESP32S3 OTG VCP example - see [USB CDC-ACM Virtual COM Port
 
 a USB VCP device should be connected to GPIO19 and 20 (USB D- and USB D+ respectively)
 
+For example, ESP32-S3-DevKitC-1 connected to a Quectel Mini PCIe EVB Kit (with Quectel EC21-E modem) via RS232
+
 ![ESP32-S3-DevKitC-1 connected to a Quectel Mini PCIe EVB Kit (with Quectel EC21-E modem) via RS232](https://github.com/horace3/ESP32S3-OTG-HOST-VCP-serial/blob/main/ESP32-S3-DevKitC-1_OTG_test.jpg)
