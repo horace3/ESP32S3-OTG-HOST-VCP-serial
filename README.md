@@ -18,3 +18,22 @@ if a USB port is not available connection may be made to GPIO19 and 20 (USB D- a
 
 e.g. Heltec ESP32 LoRa dev board GPIOs 19 and 20 connected via a USB type A connected to  Quectel Mini PCIe EVB Kit via USB-RS232 module
 ![Heltec ESP32 LoRa dev boar](https://github.com/horace3/ESP32S3-OTG-HOST-VCP-serial/blob/main/Heltec_ESP32S3_LoRa_V3_OTG_test_1.jpg)
+
+Arduino IDE serial monitor output in response to AT commands
+```
+Arduino IDE ESP32-S3-DevKitC-1 OTG Host VCP serial test
+enter text to transmit over VCP serial
+at
+OK
+at+cgmi
+Quectel
+OK
+at+cgmm
+EC21
+OK
+at_csq
+ERROR
+at+csq
++CSQ: 99,99
+OK
+```
