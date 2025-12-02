@@ -1,0 +1,67 @@
+Arduino IDE ESP32-S3-DevKitC-1 OTG Host VCP serial test
+Disconnect semaphore created OK
+Installing USB Host [USB INSTALL RESULT] 0
+Installing CDC-ACM Host driver [CDC ACM INSTALL RESULT] 0
+Opening any VCP device...
+Failed to open VCP device
+Opening any VCP device...
+Failed to open VCP device
+Opening any VCP device...
+Setting up line coding result 0
+
+
+enter text to transmit over VCP serial
+FTDI loopback test 1
+FTDI test 2
+FTDI test 3 1234567890
+CDC-ACM error has occurred, err_no = 1Device suddenly disconnected
+Done. You can reconnect the VCP device to run again.E (53118) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+USB: All devices freed
+Opening any VCP device...
+Failed to open VCP device
+Opening any VCP device...
+Failed to open VCP device
+Opening any VCP device...
+Failed to open VCP device
+Opening any VCP device...
+Setting up line coding result 0
+
+
+enter text to transmit over VCP serial
+FTDI reconnected
+test 1 67890
+test 2 yyyyyyyuuiiuiiiii
+
+------------------------------------------------------------------------------------------
+
+
+
+Arduino IDE ESP32-S3-DevKitC-1 OTG Host VCP serial test
+Disconnect semaphore created OK
+Installing USB Host [USB INSTALL RESULT] 0
+Installing CDC-ACM Host driver [CDC ACM INSTALL RESULT] 0
+
+
+enter text to transmit over VCP serial
+FTDI loopback test 1
+test 2
+test3 1234567890
+
+-------------------------------------------------------------
+
+
+Arduino IDE ESP32-S3-DevKitC-1 OTG Host VCP serial test
+enter text to transmit over VCP serial
+at
+OK
+at+cgmi
+Quectel
+OK
+at+cgmm
+EC21
+OK
+at_csq
+ERROR
+at+csq
++CSQ: 99,99
+OK
