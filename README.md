@@ -19,9 +19,25 @@ if a USB port is not available connection may be made to GPIO19 and 20 (USB D- a
 e.g. Heltec ESP32 LoRa dev board GPIOs 19 and 20 connected via a USB type A female connecter to a Quectel Mini PCIe EVB Kit via USB-RS232 module
 ![Heltec ESP32 LoRa dev boar](https://github.com/horace3/ESP32S3-OTG-HOST-VCP-serial/blob/main/Heltec_ESP32S3_LoRa_V3_OTG_test_1.jpg)
 
-Arduino IDE serial monitor output in response to AT commands
+Arduino IDE serial monitor output 
+1. initially no VCP devices connected
+2. USB-RS232 adapter connected to a Quectel Mini PCIe EVB Kit connected
+3. AT commands transmitted to modem and response
+4. USB-RS232 adapter disconnected
+5. FTDI USB-TTL 3.3 adapter connected for loopback test
+6. text transmitted with loopback test resp[onse
+
 ```
 Arduino IDE ESP32-S3-DevKitC-1 OTG Host VCP serial test
+Disconnect semaphore created OK
+Installing USB Host [USB INSTALL RESULT] ESP_OK
+ Installing CDC-ACM Host driver [CDC ACM INSTALL RESULT]  ESP_OK
+ Opening any VCP device...
+Failed to open VCP device
+Opening any VCP device...
+Setting up line coding ESP_OK
+
+
 enter text to transmit over VCP serial
 at
 OK
@@ -31,9 +47,24 @@ OK
 at+cgmm
 EC21
 OK
-at_csq
-ERROR
 at+csq
 +CSQ: 99,99
 OK
+
+Device suddenly disconnected
+Done. You can reconnect the VCP device to run again.E (136023) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+USB: All devices freed
+Opening any VCP device...
+Failed to open VCP device
+Opening any VCP device...
+Setting up line coding ESP_OK
+
+
+enter text to transmit over VCP serial
+FTDI 3v3 loopback test
+loop backtest 2
+loopback test3 1234567890
 ```
+ESP32-S3-DevKitC-1 connected to a FTDI USB-TTL 3.3V adapter (white wire is for loopback test)
+![FTDI USB-TTL 3.3V adapter](https://github.com/horace3/ESP32S3-OTG-HOST-VCP-serial/blob/main/ESP32S3_FTDI_serial)
+
