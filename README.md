@@ -66,5 +66,5 @@ loop backtest 2
 loopback test3 1234567890
 ```
 ESP32-S3-DevKitC-1 connected to a FTDI USB-TTL 3.3V adapter (white wire is for loopback test)
-![FTDI USB-TTL 3.3V adapter](https://github.com/horace3/ESP32S3-OTG-HOST-VCP-serial/blob/main/ESP32S3_FTDI_serial)
+![FTDI USB-TTL 3.3V adapter](https://github.com/horace3/ESP32S3-OTG-HOST-VCP-serial/blob/main/ESP32S3_FTDI_serial.jpg)
 
